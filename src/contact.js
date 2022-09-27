@@ -9,11 +9,11 @@ function createContact() {
     contactInfo.classList.add('contact__section');
 
     const divAdr = document.createElement('div');
-    divAdr.textContent = "Come : DON'T COME TO US. WELL COME TO YOU";
+    divAdr.textContent = "Come : DON'T COME TO US. WE'LL COME TO YOU";
     const divMail = document.createElement('div');
-    divMail.textContent = "Mail us : DON'T MAIL US. WELL MAIL YOU";
+    divMail.textContent = "Mail us : DON'T MAIL US. WE'LL MAIL YOU";
     const divNum = document.createElement('div');
-    divNum.textContent = "Call us : DON'T CALL US. WELL CALL YOU";
+    divNum.textContent = "Call us : DON'T CALL US. WE'LL CALL YOU";
     contactInfo.appendChild(divAdr);
     contactInfo.appendChild(divMail);
     contactInfo.appendChild(divNum);

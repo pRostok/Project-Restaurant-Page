@@ -1,7 +1,8 @@
 import loadContact from "./contact";
 import loadHome from "./home";
+import loadMenu from "./menu";
 
-function createHeader(){
+function createHeader() {
 
     const header = document.createElement('header');
     header.classList.add('header');
@@ -26,15 +27,21 @@ function createNav() {
     buttonHome.textContent = "Home";
     buttonHome.addEventListener('click', loadHome);
 
+    const buttonMenu = document.createElement('div');
+    buttonMenu.classList.add('nav__item');
+    buttonMenu.textContent = "Menu";
+    buttonMenu.addEventListener('click', loadMenu);
+
     const buttonContact = document.createElement('div');
     buttonContact.classList.add('nav__item');
     buttonContact.textContent = "Contact Us";
     buttonContact.addEventListener('click', loadContact);
 
     nav.appendChild(buttonHome);
+    nav.appendChild(buttonMenu);
     nav.appendChild(buttonContact);
 
-    return nav; 
+    return nav;
 }
 
 function createMain() {
@@ -53,14 +60,14 @@ function createFooter() {
     const divAdr = document.createElement('div');
     divAdr.textContent = "dont mess with us";
     const divMail = document.createElement('a');
-    divMail.setAttribute('src','mailto:support@gamil.com');
+    divMail.setAttribute('src', 'mailto:support@gamil.com');
     divMail.textContent = "Just Don't";
     contactInfo.appendChild(divAdr);
     contactInfo.appendChild(divMail);
 
     footer.appendChild(contactInfo);
 
-    
+
     return footer;
 }
 
